@@ -1,0 +1,353 @@
+* { box-sizing: border-box; }
+
+body {
+		
+		   margin: 0;
+		}
+		
+		.full-wrapper {
+
+		   background: #69757d;
+		   width: 100%;
+		   text-align: center;
+		}
+
+		.page {
+		   
+		   margin: 0 60px;
+		   background: #e3e8eb;
+		}
+		
+		.page:before, .page:after {
+		
+		   content: '';
+		   display: table;
+		}
+
+		#header {
+
+		   font-family: Arial;
+		   padding: 15px;
+		   background: #c2cdd5;
+		   color: blue;
+		   position: relative;
+		   font-size: 15px;
+		}
+
+		.box {
+
+		   background: rgb(146, 184, 255);
+		   background: rgba(146, 184, 255, 0.25);
+		   padding: 10px;
+		   margin: 2px;
+		   position: relative;	
+		}
+
+		.box h1 {
+		   padding: auto;
+		   margin: auto;
+		}
+
+		ul#nav {
+		   
+		   list-style: none;
+		   position: absolute;
+		   margin: 0;
+		   padding: 0;
+		   right: 1em;
+		   top: 50%;
+		   transform: translateY(-50%);
+		   -webkit-transform: translateY(-50%);
+     		   -ms-transform: translateY(-50%);
+		   -moz-transform: translateY(-50%);
+		   font-size: 0px;
+		}
+
+		ul#nav li {
+		   display: inline-block;
+		   padding: 0 15px;
+		   margin: inherit;
+		   font-family: Merriweather;
+		   color: #fff;
+		   font-size: 20px;
+		   line-height: 56px;
+		   height: 56px;
+		   position: relative;
+		   float: left;
+		   
+		}
+
+		ul#nav li:hover {
+		
+		   color: black;
+		   cursor: pointer;
+		   background: #6bc9ed;
+		}
+
+		#footer {
+
+		   font-family: Arial;
+		   font-size: 15px;
+		   padding: 10px;
+		   background: #c2cdd5;
+		   text-align: center;
+		   color: blue;
+		   clear: both;
+		}
+
+		.row {
+		   padding: 0 10px;
+		}
+
+		.container {
+
+		   padding: 10px;
+		}
+
+		.content > div {
+		   padding: 10px;
+		   margin: 20px;
+		   width: 700px;
+		}
+
+		[class*="content"] p {
+		   
+		   font-family: Lato;
+		   color: #186aa3;
+		   text-align: justify;
+			
+		}
+
+		.visual {
+
+		   
+		   
+		}
+
+		.border {
+		   
+		   margin: 20px auto;
+		   padding: 10px;
+		   background: #fff;
+		   border: 2px solid black;
+		   border-radius: 5px;
+		    display: inline-block;
+		   /*width: 475px;*/
+		}
+		
+		.wrapper {
+		
+		   margin: 15px;
+		   padding: 20px;
+		   background: #9db0e9;
+		   color: #186aa3;
+		   box-shadow: 1px 1px 3px black;
+		   text-align: left;
+		   min-width: 450px;
+		   /*width: 421px;*/
+		}
+
+		label {
+		
+		   display: inline-block;
+		   text-align: right;   
+		   width: 100px;
+		}	
+
+		input {
+		   
+		   margin: 5px;
+		}
+
+		input[type="submit"] {
+
+		   width: 100px;
+		   padding: 15px;
+		   float: right;
+		   margin: auto;
+		}
+
+		#example > div {
+
+		    float: left;
+		}
+
+		#example:after, #example:before {
+		   content: '';
+		   clear: both;
+		   display: block;
+		}
+
+		#result {
+		
+		   font-weight: bold;
+		   font-size: 20px;
+		   white-space: pre-wrap;
+		
+		}
+
+		#result p {
+
+		   margin-bottom: 0;
+		}
+
+		input:required:focus {
+		 
+		   background: yellow;
+		}
+
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+		[class*="col-"] {
+	 	   float: left;
+		}
+
+
+.row::after {
+    content: "";
+    clear: both;
+   display: table;
+}
+
+.smallbox {
+
+    width: 20px;
+}
+
+.mediumbox {
+    width: 150px;
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .content > div {
+
+	width: 650px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .content > div {
+
+	width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .content > div {
+
+	width: 550px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+
+    .content > div {
+
+	width: 550px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .page {
+		   
+	margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .content > div {
+
+	width: 475px;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .content > div {
+		   padding: 0;
+		   margin: 0;
+		   width: auto;
+		}
+
+    .page {
+	
+	margin: 0;
+	padding: 0;
+    }
+
+    .box {
+
+	min-width: 100px;
+	width: 100%;
+	position: relative;
+	margin: 0
+	padding: 0;	
+	height: 60px; 
+    }
+
+    .box h1 {
+
+	text-align: center;
+    }
+
+    #header {
+
+	height: 120px;
+    }
+
+
+    ul#nav {
+		   
+	position: relative;
+	margin: 10px auto 0 auto;
+	display: table;
+    }
+
+    ul#nav li {
+
+	line-height: 40px;
+	height: 40px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 500px) {
+
+    ul#nav li {
+	
+	font-size: 15px;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    ul#nav li {
+	
+	padding: 0 5px;
+    }
+}   
