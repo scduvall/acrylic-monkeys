@@ -94,7 +94,7 @@ nav ul ul li a { display: inline-block; padding: 10px 20px; margin: 0; width: 15
 .case-form .content p { margin-bottom: 10px; font-family: "Lato", serif; font-size: 1em; text-align: justify;}
 
 .case-form .content::after { 
-	content: ' '; position: absolute; top: 15%; right: -25%; 
+	content: ' '; position: absolute; top: 15%; right: -28%; 
 	height: 100px; width: 100px;
 	background: url(../images/arrow.svg) no-repeat right top; background-size: 75px 75px;
 	-webkit-transform: rotate(-130deg);
@@ -113,7 +113,7 @@ nav ul ul li a { display: inline-block; padding: 10px 20px; margin: 0; width: 15
 .case-form .result h2 { padding: 20px 0 0 0; margin-bottom: 15px; } 
 
 .case-form .result::after { 
-	content: ' '; position: absolute; top: 40%; right: -18%; 
+	content: ' '; position: absolute; top: 40%; right: -21%; 
 	height: 100px; width: 100px;
 	background: url(../images/arrow.svg) no-repeat right top; background-size: 75px 75px;
 	-webkit-transform: rotate(30deg);
@@ -132,17 +132,19 @@ nav ul ul li a { display: inline-block; padding: 10px 20px; margin: 0; width: 15
 	position: absolute;
 }
 
-label { margin-right: 5px; }
+label { margin-right: 5px; width: 100px; display: inline-block; }
 input { margin-bottom: 10px; }
 
-input.smallbox { width: 15px; }
-input.mediumbox { width: 150px; }
+.box::after { content:''; display: block; clear: both; }
 
-input[type="submit"] { position: absolute; top: 28px; padding: 20px; }
+input.smallbox { width: 15px; }
+input.mediumbox { width: 125px; }
+
+input[type="submit"] { position: absolute; top: 28px; left: 73%; padding: 20px; }
 
 .case-form .result #result { 
-	font-weight: bold; font-size: 1.5em; white-space: pre-wrap; 
-	border: 2px dotted #55a4aa; width: 100%; height: 100px; padding-top: 15px;
+	font-weight: bold; font-size: 1.5em; white-space: pre-wrap;
+	border: 2px dotted #55a4aa; width: 100%; height: 100px; padding: 15px 0;
 }
 
 .case-form .result #result p { 
@@ -181,6 +183,18 @@ input[type="submit"] { position: absolute; top: 28px; padding: 20px; }
 
 	.case-form .content, .case-form .result { width: 46%; }
 
+	.case-form .content::after { 
+		content: ' '; position: absolute; top: 10%; right: -40%; 
+		height: 100px; width: 100px;
+		background-size: 75px 75px;
+	}
+
+	.case-form .result::after { 
+		content: ' '; position: absolute; top: 15%; right: -32%; 
+		height: 100px; width: 100px;
+		background-size: 75px 75px;
+	}
+
 }
 
 @media screen and (max-width: 975px) {
@@ -195,13 +209,22 @@ input[type="submit"] { position: absolute; top: 28px; padding: 20px; }
 
 	nav > ul::before { border-left: 2px solid #fff; left: -2px; height: 50%; margin-top: 10px; }
 
-}
+	.case-form { margin-left: 15px; }
 
-@media screen and (max-width: 900px) {
+	.case-form > div { float: none; width: 100%; }
 
+	.case-form .content { width: 100%; margin: 0; }
+
+	.case-form .content::after, .case-form .result::after { display: none; }
 	
+	.case-form .visual { width: 100%; margin: 0 auto; }
+
+	.box { position: relative; top: 0; margin: 0 auto; right: 0; }
+
+	.case-form .result { width: 100%; margin: 0; }
 
 }
+
 
 @media screen and (max-width: 800px) {
 
@@ -228,7 +251,27 @@ input[type="submit"] { position: absolute; top: 28px; padding: 20px; }
 	nav > ul > li > a { display: inline-block; padding-top: 15px; width: auto; }
 
 	nav ul ul li a { padding-left: 20px; text-align: left; }
-	
+
+	.case-form .result #result { height: 150px; }
+
+	.case-form .result #result p { padding: 30px 0; }
+
+	.case-form .visual { margin-top: 30px; }	
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.box { 
+		padding-top: 30px; padding-bottom: 70px; 
+		width: 300px; font-size: .9em;
+	}
+
+	form label:nth-child(11) { display: inline; }
+
+	input[type="submit"] { position: absolute; top: 75%; left: 35%; padding: 10px 20px;  }
+
+	.case-form .result #result { font-size: 1.2em; }
 
 }
 
