@@ -1,4 +1,6 @@
 
+// If the 'result' element for the custom message does not yet exist; create it, otherwise, clear it for the next message
+
 function createResult() {
 
 	if(!(document.getElementById("result"))) {
@@ -12,6 +14,8 @@ function createResult() {
 	}
 
 }
+
+// Grab form data and generate custom message
 
 function processForm() {
 
