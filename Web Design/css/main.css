@@ -157,6 +157,7 @@ input[type="submit"] { position: absolute; top: 28px; left: 73%; padding: 20px; 
 }
 .case-form .result #result p.appear { opacity: 1; }
 
+
 /* Footer  */
 
 #footer { background: #fff; font-family: 'Merriweather', serif; font-size: .75em; 
@@ -164,11 +165,6 @@ input[type="submit"] { position: absolute; top: 28px; left: 73%; padding: 20px; 
 }
 
 #footer div { margin-top: 10px; }
-
-
-/* Misc */
-
-
 
 
 
