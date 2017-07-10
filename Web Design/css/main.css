@@ -19,7 +19,7 @@ p { font-family: 'Lato', serif; font-size: 1em; font-weight: 400; padding: 0; ma
 
 /* Header */
 
-div#header { background: #76cf37; }
+div#header { background:   #e88363; }
 div#header .topbar { position: relative; padding: 0; height: 100px; }
 div#header .topbar h1 { position: absolute; top: 25px; left: 1em; color: #fff; }
 
@@ -47,7 +47,7 @@ nav > ul::before {
 	position: absolute; top: 1em; left: -3px; width: 10px; height: 70%;
 }
 
-nav ul li:hover { background: #7bac3d; }
+nav ul li:hover { background:  #d1603b; }
 
 nav > ul > li { display: table; float: left; position: relative; margin: 0; padding: 0; }
 
@@ -60,7 +60,7 @@ nav a { font-family: 'Merriweather', sans-serif; font-size: 1.25em; color: #fff;
 
 
 nav ul li a:visited { color: #fff; }
-nav ul li a:hover { color: #000; background: #b5f24b; }
+nav ul li a:hover { color: #000; background:  #fd5f39; }
 
 
 
@@ -70,7 +70,7 @@ nav ul li:hover > ul { display: block; }
 
 nav ul ul { position: absolute; list-style: none;
 	padding: 0; top: 100%; left: 0;
-	background: #7bac3d; margin: 0; display: none;
+	background:  #d1603b; margin: 0; display: none;
 }
 
 nav ul ul li { position: relative; 
@@ -197,7 +197,7 @@ input[type="submit"] { position: absolute; top: 28px; left: 73%; padding: 20px; 
 
 	h1 { font-size: 1.5em; }
 
-	.clearbar { height: 231px; background: #fff url(../images/banner_1_1000.jpg) no-repeat center bottom; }
+	.clearbar { background: #fff url(../images/banner_1_1000.jpg) no-repeat center bottom; }
 	
 	div#header .topbar h1 { top: 35px; }
 
@@ -224,7 +224,7 @@ input[type="submit"] { position: absolute; top: 28px; left: 73%; padding: 20px; 
 
 @media screen and (max-width: 800px) {
 
-	.clearbar { height: 185px; background: #fff url(../images/banner_1_800.jpg) no-repeat center bottom; }
+	.clearbar { background: #fff url(../images/banner_1_800.jpg) no-repeat center bottom; }
 	
 	div#header .topbar { height: auto; text-align: center; }
 
