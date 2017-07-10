@@ -40,7 +40,5 @@ Design and coding techniques used in this project currently include:
 
 Tasks
 --------------------------
-- Make two more variants on the banner/header and use JavaScript to cycle through them with a timeout function
 - Create a landing page and include the Form Manipulation document as an article within the web domain
-- Test sources of cross-browser issues with Internet Explorer and find alternative solutions
 
