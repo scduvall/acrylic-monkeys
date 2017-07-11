@@ -13,16 +13,14 @@
    <body>
 
 	<div id="page">
-	<div id="header">
-		   
-			<div class="topbar">
+	<div class="topbar">
 
-				<h1>Web Design Code Samples</h1>
+				<a title="home" href="#"><h1>Sam's WebSpace</h1></a>
 
 				<nav><ul><li>
 						<a title="Code" href="#">Code</a>
 						<ul>
-							<li><a title="HTML" href="#">HTML</a></li>
+							<li><a title="HTML" href="html/forms.html">HTML</a></li>
 							<li><a title="CSS" href="#">CSS</a></li>
 							<li><a title="JavaScript" href="#">JavaScript</a></li>
 						</ul>
@@ -40,46 +38,13 @@
 					<li><a title="Contact" href="#">Contact</a></li>
 					</ul>
 				</nav>
-				
-			</div>
-			
 	</div>
 
 	<div class="clearbar"></div>
   
-	<div class="case-form">
-		       <div class="content">
-				<h2>Manipulating Form Data</h2>
-			    	<p>Here we have a simplified HTML form, which will take user input and upon
-				submission, do something with it using JavaScript. This example makes use of 
-				pattern recognition, required fields, and multiple types of input items to showcase
-				how a common form might work on your webpage.</p>
-				<p>This form is a smart form: it will not let you submit any data that doesn't match
-				its predefined patterns and requirements. In this case, you must enter a value 
-				for first and last name, the middle initial may only be a single character, and only
-				characters A-Z upper- or lower-case are accepted as input.</p>
-				<p>Once these conditions are met, press the 'Submit' button and a personalized
-				message will be displayed in the box below.</p>
-				<p>Try it out!</p>
-			</div>
-			<div class="visual">
-				<div class="box">
-					<form id="example" name="example">
-						<label>First name:</label><input type="text" class="mediumbox" name="first" pattern="[A-Za-z]{1,15}" required></input><br/>
-						<label>Middle initial:</label><input type="text" class="smallbox" name="middle" pattern="[A-Za-z]{1}"></input><br/>
-						<label>Last name:</label><input type="text" class="mediumbox" name="last" pattern="[A-Za-z]{1,15}" required></input><br/><br />
-						<label>Gender:</label><input type="radio" value="boy" name="gender"> Male</input>
-						<input type="radio" value="girl" name="gender"> Female</input>
-						<input type="radio" value="nb" name="gender" checked> Other</input>
-						<input type="submit" value="Submit"></input>
-                			</form>
-				</div>
-			</div>
-			<div class="result">
-				<h2>Result</h2>
-				<div id="result"></div>
-			</div>
-	</div> 
+	<div class="case-intro">
+		<p>Something interesting and flashy will appear here to explain what this page does. For instance, I could say that this is a personal project containing examples of web development practices that I have learned and can now share with others!</p>
+	</div>
 
 	<div id="footer">
 		&copy; Sam Duvall
