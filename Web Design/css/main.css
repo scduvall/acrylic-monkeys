@@ -16,14 +16,18 @@ p { font-family: 'Lato', serif; font-size: 1em; font-weight: 400; padding: 0; ma
 
 .clearbar { height: 300px; background: #fff url(../images/banner_1_1300.jpg) no-repeat center bottom; }
 
-
 /* Header */
 
-div#header { background:   #e88363; }
-div#header .topbar { position: relative; padding: 0; height: 100px; }
-div#header .topbar h1 { position: absolute; top: 25px; left: 1em; color: #fff; }
+.topbar { 
+	background: #e88363; 
+	position: sticky; position: -webkit-sticky; 
+	padding: 0; height: 100px; top: 0; 
+	z-index: 10;
+}
+.topbar > a { text-decoration: none; }
+.topbar h1 { position: absolute; top: 25px; left: 1em; color: #fff; }
 
-div#header::after {
+.topbar::after {
 	content: '';
 	clear: both;
 	display: block;
@@ -79,6 +83,11 @@ nav ul ul li { position: relative;
 
 nav ul ul li a { display: inline-block; padding: 10px 20px; margin: 0; width: 150px; font-size: 1em; 
 }
+
+/* Home Page */
+
+.case-intro { margin: 50px 25px; position: relative; }
+.case-intro p { text-align: center; margin: 0 100px; }
 
 
 /* Form Section */
@@ -175,7 +184,7 @@ input[type="submit"] { position: absolute; top: 28px; left: 73%; padding: 20px; 
 
 	h1 { font-size: 2em; }
 	
-	div#header .topbar h1 { top: 30px; }
+	.topbar h1 { top: 30px; }
 
 	.case-form .content, .case-form .result { width: 46%; }
 
@@ -199,7 +208,7 @@ input[type="submit"] { position: absolute; top: 28px; left: 73%; padding: 20px; 
 
 	.clearbar { background: #fff url(../images/banner_1_1000.jpg) no-repeat center bottom; }
 	
-	div#header .topbar h1 { top: 35px; }
+	.topbar h1 { top: 35px; }
 
 	nav a { font-size: 1em; }
 
@@ -226,14 +235,15 @@ input[type="submit"] { position: absolute; top: 28px; left: 73%; padding: 20px; 
 
 	.clearbar { background: #fff url(../images/banner_1_800.jpg) no-repeat center bottom; }
 	
-	div#header .topbar { height: auto; text-align: center; }
+	.topbar { height: 125px; text-align: center; }
 
-	div#header .topbar h1 { 
+	.topbar h1 { 
 		position: static; line-height: 50px;
 		padding: 15px 0 5px 0;
+		display: inline-block;
 	}
 
-	nav { position: static; margin: 0; height: 50px; display: inline-block; }
+	nav { width: 350px; position: static; margin: 0 auto; height: 50px; display: block; }
 
 	nav > ul { margin-top: 5px; }
 
@@ -273,7 +283,8 @@ input[type="submit"] { position: absolute; top: 28px; left: 73%; padding: 20px; 
 
 @media screen and (max-width: 400px) {
 
-	div#header .topbar h1 { font-size: 1.25em; }
+	.topbar h1 { font-size: 1.25em; }
+	nav { width: 275px; margin: 0 auto; }
 	nav > ul > li { width: auto; }
 	nav > ul > li > a { width: auto; padding: 15px 10px 0 10px; }
 	nav ul ul li a { padding-left: 12px; font-size: .75em; width: 100px; }
